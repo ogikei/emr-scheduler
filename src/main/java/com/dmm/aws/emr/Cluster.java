@@ -11,9 +11,9 @@ import java.util.logging.Logger;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class Scheduler {
+public class Cluster {
 
-  private static final Logger logger = Logger.getLogger(Scheduler.class.getName());
+  private static final Logger logger = Logger.getLogger(Cluster.class.getName());
 
   private String clusterName;
   private String emrVersion;
@@ -27,7 +27,7 @@ public class Scheduler {
   private String masterSecurityGroup;
   private String slaveSecurityGroup;
 
-  public Scheduler(JSONObject jsonObject) {
+  public Cluster(JSONObject jsonObject) {
     JSONObject emrJSONObject = jsonObject.getJSONObject("emr");
     clusterName = emrJSONObject.getString("clusterName");
     emrVersion = emrJSONObject.getString("emrVersion");

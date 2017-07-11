@@ -1,0 +1,11 @@
+# ignore IntelliJ
+.idea/
+*.iml
+
+# ignore gradle
+.gradle/
+
+# ignore build
+target/
+build/
+out/
